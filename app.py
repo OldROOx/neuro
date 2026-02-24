@@ -7,7 +7,7 @@ lambdas = [1, 1e-6, 10, 0.1, 0.01]
 results = []
 
 for lambda_value in lambdas:
-    neuronalNet = NeuronalNetwork('datasets/or.csv')
+    neuronalNet = NeuronalNetwork('datasets/A233392.csv')
     print(f"\n--- Iniciando Entrenamiento Lambda = {lambda_value} ---")
     results.append(neuronalNet.train(epochs=500, lambda_value=lambda_value))
 

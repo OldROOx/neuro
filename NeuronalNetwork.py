@@ -4,7 +4,7 @@ import numpy.linalg as la
 from entities.data_results import DataResults
 
 class NeuronalNetwork:
-    def __init__(self, path_dataset: str, skiprows = 1):
+    def __init__(self, path_dataset: str, skiprows = 0):
         self.dataset = np.loadtxt(path_dataset, delimiter=",", skiprows=skiprows)
         self.Y_values = self.__slicing_Y_values()
         self.X_values = self.__slicing_X_values()
